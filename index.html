@@ -2,28 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-  
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="js-clock">
-        <h1> 00:00</h1>
+    <section class="center">
+    <div class="js-clock clock">
+        <h3 class="clock__text"> 00:00</h3>
     </div>    
-    <form class="js-form form">
-        <input type="text" placeholder="이름이 무엇 입니까?" />
+    <div class="js-name name"></div>
+    <div>
+      <form class="js-to-do to-do">
+        <input class="js-add-to-do to-do__add-to-do" placeholder="앞으로의 계획은?" type="text" />
     </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-todoForm">
-        <input type="text" placeholder="해야 할 일을 추가해 주세요" />
-    </form>
-    <ul class="js-toDoList">
+    <ul class="js-list list"></ul>
 
-    </ul>
-    <script src="clock.js"></script>
-    <script src="gretting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
+    </div>
+    <div class="js-location location">
+      <span class="location__text"></span>
+    </div>
+    <div class="js-weather weather">
+      <span class="weather__text"></span>
+    </div>
+    </section>
+    <script src="js/clock.js"></script>
+    <script src="js/gretting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
 
  
   </body>
